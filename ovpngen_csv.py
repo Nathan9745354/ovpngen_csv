@@ -4,12 +4,12 @@ import os
 
 datas = []
 string = "<br>"
-for filename in os.listdir('/root/L1_singapore'):
+for filename in os.listdir('/root/xxxx'):
         if filename.endswith('.ovpn'):
-          with open(os.path.join('/root/L1_singapore', filename)) as f:
+          with open(os.path.join('/root/xxxx', filename)) as f:
             contents = f.readlines();
             contentStr = '\n'.join([line.strip() + string for line in contents])
-            datas.append(['L1_singapore1',1,'simple-ovpn','red',contentStr])
+            datas.append(['xxxx',1,'simple-ovpn','red',contentStr])
             print(contentStr)
 
 header = ['ovpn-name','ovpn-level','ovpn-type','ovpn-theme-color','ovpn-content']
